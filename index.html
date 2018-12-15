@@ -57,27 +57,10 @@
 
 		<div class="container">
 			<div ng-app="myApp" ng-controller="myCtrl">
-		        <p>Simple Table</p>
-		        <!-- <table border="1" cellsapcing="5" cellpadding="5" width="400">
-			        <tr>
-			        	<th>Title</th>
-			            <th>Image</th>
-			            <th>Date Release</th>
-			            <th>Overview</th>
-			            <th>Vote</th>
-			        </tr>
-			        <tr ng-repeat="hit in result.results">
-			            <td>{{hit.title}}</td>
-			            <td>{{hit.poster_path}}</td>
-			            <td>{{hit.release_date}}</td>
-			            <td>{{hit.overview}}</td>
-			            <td>{{hit.vote_average}}</td>
-			        </tr>
-		        </table> -->
 		        <div class="row">
 		        	<div class="col-sm-3" ng-repeat="hit in result.results">
 		        		<div class="card">
-		        			<img src="{{hit.poster_path}}" alt="no file found" style="width:100%">
+		        			<img src="https://image.tmdb.org/t/p/w185/{{hit.poster_path}}" style="width:100%">
 		        			<p class="title">{{hit.title}}</p>
 		        			<p>{{hit.release_date}}</p>
 		        			<p>{{hit.overview}}</p>
