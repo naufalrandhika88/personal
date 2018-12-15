@@ -59,13 +59,15 @@
 			<div ng-app="myApp" ng-controller="myCtrl">
 		        <div class="row">
 		        	<div class="col-sm-3" ng-repeat="hit in result.results">
-		        		<div class="card">
-		        			<img src="https://image.tmdb.org/t/p/w185/{{hit.poster_path}}" style="width:100%">
-		        			<p class="title">{{hit.title}}</p>
-		        			<p>{{hit.release_date}}</p>
-		        			<p>{{hit.overview}}</p>
-		        			<p>{{hit.vote_average}}</p>
-		        			<p><button>Contact</button></p>
+		        		<div class="card" style="height: 1250px;">
+		        			<div class="card-body">
+			        			<img src="https://image.tmdb.org/t/p/w185/{{hit.poster_path}}" style="width:100%">
+			        			<p class="title">{{hit.title}}</p>
+			        			<p>{{hit.release_date}}</p>
+			        			<p>{{hit.overview}}</p>
+			        			<p>{{hit.vote_average}}</p>
+			        			<p><button>Contact</button></p>
+		        			</div>
 		        		</div>
 		        		<br>
 		        	</div>	        	
