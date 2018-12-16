@@ -60,13 +60,14 @@
 		        <div class="row">
 		        	<div class="col-sm-3" ng-repeat="hit in result.results">
 		        		<div class="card" style="height: 750px;">
-		        			<img src="https://image.tmdb.org/t/p/w185/{{hit.poster_path}}" style="width:100%">
+		        			<img ng-src="https://image.tmdb.org/t/p/w185/{{hit.poster_path}}" style="width:100%">
+		        			<!-- https://image.tmdb.org/t/p/w185/{{hit.poster_path}} -->
 		        			<p class="title">{{hit.title}}</p>
 		        			<p>{{hit.release_date}}</p>
 		        			<p>{{hit.overview | limitTo: 150}}......</p>
 		        			<p>{{hit.vote_average}}</p>
 		        			<p id="testid">{{hit.id}}</p>
-		        			<p><button class="primary-btn text-uppercase">Detail</button></p>
+		        			<a href="http://localhost/personal/services.html/{{hit.id}}"><button class="primary-btn text-uppercase">Detail</button></a>
 		        		</div>
 		        		<br>
 		        	</div>	        	
